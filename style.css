@@ -1,0 +1,54 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 15px;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    #navbar ul {
+        display: none;
+    }
+
+    #nav-toggle {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+    }
+}
